@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        -> receber um número inteiro do usuário e gerar a tabubada do número
+        */
+
+        const num = parseInt(prompt('Informe um número inteiro'))
+
+        /*
+            for
+
+            1 -> Variável contadora
+            2 -> Condição
+            3 -> Modificação da váriavel contadora(incremento ou decremento)
+        */
+
+        for (let i = 1; i <= 10; i++){
+
+            let resultado = num * i;
+
+            document.write(`<p>${num} X ${i} = ${resultado}</p>`)
+
+        }
+
+    </script>
+</body>
+</html>

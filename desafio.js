@@ -23,6 +23,11 @@
 
     let precoProduto = parseFloat(prompt('Qual o preço do produto'))
 
+    while(isNaN(precoProduto) == true || precoProduto <= 0){
+        alert('O preço digitado é invalido. Por favor, informe o preço apenas com números sem caracteres especiais(letras ou acentos)')    
+
+        precoProduto = parseFloat(prompt('Qual o preço do produto'))
+    }
 
     let mensagem = `
     Informe o método de pagamento:
@@ -31,6 +36,12 @@
     Digite 3 para pagamento em cartão
     `
     let metodoDePagamento = prompt(mensagem)
+
+    while(metodoDePagamento > 3 || metodoDePagamento < 1){
+        alert('Método de pagamento invalido, insira um metodo de pagamento valido para prosseguir com a compra.')
+
+        metodoDePagamento = prompt(mensagem)
+    }
 
     console.log(precoProduto)
     console.log(metodoDePagamento)
