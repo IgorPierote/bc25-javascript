@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Faça um programa em Javascript que leia um vetor com dez números reais, calcule e mostre a quantidade
+        de números negativos e a soma dos números positivos desse vetor.
+        */
+
+        const v = [10,-1, 5, 12, -5, 20, 15, -10, 4, -2, ,5]
+
+        let somaP=0
+
+        let cont=0
+
+
+        for(let i=0; i <= 10 - 1;i++){
+
+            if(v[i] >= 0){
+                somaP= somaP+v[i]
+            }else{
+                cont++
+            }
+
+        }
+
+        document.write(`<p> A soma dos números positivos é ${somaP} e a quantidade de números negativos é ${cont}</p>`)
+
+    </script>
+</body>
+</html>
