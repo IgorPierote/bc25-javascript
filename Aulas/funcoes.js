@@ -40,3 +40,4 @@ const num1= parseInt(prompt('Informe o primeiro número'))
 const num2= parseInt(prompt('Informe o segundo número'))
 
 alert(`O maior númeor entre esses é ${maiorValor(num1, num2)}`)
+
