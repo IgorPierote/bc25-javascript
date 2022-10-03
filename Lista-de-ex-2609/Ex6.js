@@ -13,7 +13,7 @@ let Valores = []
 
 while(cont <= 9){
     
-    A = A * R
+    A = A + R
     
     Valores.push(A)
 
